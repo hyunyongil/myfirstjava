@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Demo02 {
     public static void main(String[] args) {
         HellowWorld hw = new HellowWorld();
-        hw.dd = 5.4;
+        hw.dd = 5.9;
         System.out.println(hw.dd);
         int classNum = 2; //반급수량
         int stuNum = 3; //매개 반급 학생수
