@@ -54,9 +54,9 @@ public class HellowWorld {
         // 求平均值
         avg=sum/nums.length;
 
-        System.out.println("数组中的最大值：" + max);
-        System.out.println("数组中的最小值：" + min);
-        System.out.println("数组中的平均值：" + avg);
+        System.out.println("数组中的最大值： " + max);
+        System.out.println("数组中的最小值： " + min);
+        System.out.println("数组中的平均值： " + avg);
         int[] scoreArr = {89, -23, 64, 91, 119, 52, 73};
         System.out.println("考试成绩的前三名为: ");
         HellowWorld hello = new HellowWorld();
@@ -78,5 +78,4 @@ public class HellowWorld {
             System.out.println(scores[i]);
         }
     }
-
 }
