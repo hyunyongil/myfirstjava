@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Demo02 {
     public static void main(String[] args) {
         HellowWorld hw = new HellowWorld();
-        hw.dd = 4.6;
+        hw.dd = 4.8;
         System.out.println(hw.dd);
         int classNum = 2; //반급수량
         int stuNum = 3; //매개 반급 학생수
@@ -18,6 +18,7 @@ public class Demo02 {
                 sum += score;
                 System.out.println("학생 성적은 " + score + "점 입니다.");
             }
+
             avg = sum / stuNum;
             System.out.println("**" + i + "반 총 성적: " + sum);
             System.out.println("**" + i + "반 평균 성적: " + avg);
