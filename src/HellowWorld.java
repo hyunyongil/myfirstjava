@@ -13,7 +13,7 @@ public class HellowWorld {
                 num = num / 10;
             }
 
-            System.out.println("它是个" + count + "位的数！!");
+            System.out.println("它是个" + count + "位的数！!!!!!");
         } else {
             System.out.println("输入有误 ~");
         }
