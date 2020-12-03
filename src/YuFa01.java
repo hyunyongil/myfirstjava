@@ -16,5 +16,11 @@ public class YuFa01 {
         float f1 = 12.3F;
         System.out.println(f1);
 
+        char c1 = 'a';
+        char c2 = '\n';
+        char c3 = '\u0049';
+        System.out.println(c1);
+        System.out.print(c2);
+        System.out.println(c3);
     }
 }
