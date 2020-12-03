@@ -8,6 +8,7 @@ public class YuFa01 {
         short s1 = 12;
         int i1 = 123;
         long l1 = 1231244L;
+
         System.out.println(l1);
 
         double d1 = 234.54;
