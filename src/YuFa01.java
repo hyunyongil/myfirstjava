@@ -20,8 +20,23 @@ public class YuFa01 {
         char c1 = 'a';
         char c2 = '\n';
         char c3 = '\u0049';
+        char c4 = '囧';
         System.out.println(c1);
         System.out.print(c2);
         System.out.println(c3);
+        System.out.println(c4);
+
+        boolean bl1 = true;
+        System.out.println(bl1);
+
+        char c = 'a'; // a:97 A:65
+        int num = 10;
+        String str = "hello";
+        System.out.println(c+ num + str); //107hello
+        System.out.println(c+ str + num); //ahello10
+        System.out.println(c+ (num + str));//a10hello
+        System.out.println((c+ num) + str);//107hello
+        System.out.println(str + num + c);//hello10a
+
     }
 }
