@@ -15,5 +15,6 @@ public class YuFa01 {
 
         float f1 = 12.3F;
         System.out.println(f1);
+
     }
 }
