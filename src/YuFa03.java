@@ -116,5 +116,25 @@ public class YuFa03 {
         num11 = num11 - num22;
         System.out.println(num11);
         System.out.println(num22);
+
+        int num33 = 54;
+        int num44 = 57;
+        int max = (num33 > num44) ? num33 : num44;
+        System.out.println(max);
+        String num55 = (num33 > num44) ? "33큼" : (num33 == num44) ? "m=n같음" : "n큼";
+        System.out.println(num55);
+
+        int ns1 = 12;
+        int ns2 = 32;
+        int ns3 = -61;
+        int max1 = (ns1 > ns2)?ns1:ns2;
+        int max2 = (max1 > ns3)?max1:ns3;
+        System.out.println(max2);
+
+        if(ns1 > ns2){
+            System.out.println(ns1);
+        }else{
+            System.out.println(ns2);
+        }
     }
 }
