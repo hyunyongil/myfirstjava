@@ -54,6 +54,9 @@ public class YuFa04 {
         double wealth = scan.nextDouble();
         System.out.println("당신의 미남인가요(네/아니오):");
         String isHandsome = scan.next();
+        //char isHandsomeChar = isHandsome.charAt(0);
+        //String isHandsomes = String.valueOf(isHandsomeChar);
+        //System.out.print(isHandsomes);
         if(height >= 180 && wealth >=1 && isHandsome.equals("네")){
             System.out.println("당장 결혼합시다~!!");
         }else if(height >= 180 || wealth >=1 || isHandsome.equals("네")){
