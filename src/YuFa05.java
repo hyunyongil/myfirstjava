@@ -1,6 +1,6 @@
 public class YuFa05 {
     public static void main(String[] args) {
-        int number = 3;
+        int number = 2;
         switch (number){
             case 0:
                 System.out.println("zero");
