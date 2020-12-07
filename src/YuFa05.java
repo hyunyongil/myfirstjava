@@ -20,6 +20,8 @@ public class YuFa05 {
                 System.out.println("other");
         }*/
         Scanner scan = new Scanner(System.in);
+        System.out.print("请输入年份:");
+        int year = scan.nextInt();
         System.out.print("请输入月数:");
         int month = scan.nextInt();
         System.out.print("请输入日数:");
@@ -45,7 +47,11 @@ public class YuFa05 {
             case 4:
                 allDay += 31;
             case 3:
-                allDay += 28;
+                if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                    allDay += 29;
+                }else{
+                    allDay += 28;
+                }
             case 2:
                 allDay += 31;
             case 1:
