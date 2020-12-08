@@ -17,6 +17,33 @@ public class YuFaForFor08 {
             }
             System.out.println();
         }*/
+        int num = 100000;
+        int count = 0;
+        long start = System.currentTimeMillis();
+        boolean isFlag = true;
+        for (int i = 2; i <= num; i++) {
+            for (int j = 2; j < Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    isFlag = false;
+                    break;
+                }
+            }
+            if (isFlag == true) {
+                count++;
+            }
+            isFlag = true;
+        }
 
+/*        ls:for (int i = 2; i <= num; i++) {
+            for (int j = 2; j < Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    continue ls;
+                }
+            }
+            count++;
+        }*/
+        long end = System.currentTimeMillis();
+        System.out.println("작동시간은:" + (end - start));
+        System.out.println("개수는:" + count);
     }
 }
