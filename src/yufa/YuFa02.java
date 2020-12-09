@@ -1,3 +1,5 @@
+package yufa;
+
 public class YuFa02 {
     public static void main(String[] args) {
         byte b1 = 2;

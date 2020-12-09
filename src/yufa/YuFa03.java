@@ -1,3 +1,5 @@
+package yufa;
+
 public class YuFa03 {
     public static void main(String[] args) {
         int num1 = 12;

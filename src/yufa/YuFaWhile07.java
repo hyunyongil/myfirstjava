@@ -1,3 +1,5 @@
+package yufa;
+
 import java.util.Scanner;
 
 public class YuFaWhile07 {
