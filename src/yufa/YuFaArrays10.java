@@ -7,7 +7,7 @@ package yufa;
  */
 public class YuFaArrays10 {
     public static void main(String[] args) {
-        //int[] arr = new int[]{1, 2, 3};
+/*        //int[] arr = new int[]{1, 2, 3};
         int[] arrs = {1, 2, 3};
         //int[][] arr1 = new int[][]{{1, 2, 3}, {4, 5, 6}};
         int[][] arr1 = {{1, 2, 3}, {4, 5, 6}, {6, 7}};
@@ -20,7 +20,15 @@ public class YuFaArrays10 {
                 System.out.print(arr1[i][j] + " ");
             }
             System.out.println();
+        }*/
+/*        int[][] arrs1 = {{3, 5, 8}, {12, 9}, {7, 0, 6, 4}};
+        int sum = 0;
+        for (int i = 0; i < arrs1.length; i++) {
+            for (int j = 0; j < arrs1[i].length; j++) {
+                sum += arrs1[i][j];
+            }
         }
+        System.out.println(sum);*/
 
     }
 }
