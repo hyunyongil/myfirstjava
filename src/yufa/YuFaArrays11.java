@@ -53,13 +53,26 @@ public class YuFaArrays11 {
             arr[i] = arr[arr.length - i - 1];
             arr[arr.length - i - 1] = temp;
         }*/
-        for (int i = 0,j=arr.length-1; i <j ; i++,j--) {
+/*        for (int i = 0,j=arr.length-1; i <j ; i++,j--) {
             String temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
-        }
-        for (int i = 0; i < arr.length; i++) {
+        }*/
+/*        for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
+        }*/
+        String dest = "DD";
+        boolean isFlag = true;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals(dest)) {
+                System.out.println(i);
+                isFlag = false;
+                break;
+            }
         }
+        if(isFlag){
+            System.out.println("없습니다");
+        }
+
     }
 }
