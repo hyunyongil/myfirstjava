@@ -13,11 +13,15 @@ public class YuFaArrays11 {
             System.out.println(arr[i]);
         }
         int maxValue = 0;
+        int avgValue = 0;
         for (int i = 0; i < arr.length; i++) {
             if(maxValue < arr[i]){
                 maxValue = arr[i];
             }
+            avgValue += arr[i];
         }
+        avgValue = avgValue / arr.length;
         System.out.println("최대치는: "+maxValue);
+        System.out.println("평균치는: "+avgValue);
     }
 }
