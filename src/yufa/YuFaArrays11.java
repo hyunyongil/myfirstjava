@@ -7,21 +7,59 @@ package yufa;
  */
 public class YuFaArrays11 {
     public static void main(String[] args) {
-        int[] arr = new int[10];
+/*        int[] arr = new int[10];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * (99 - 10 + 1) + 10);
             System.out.println(arr[i]);
         }
         int maxValue = 0;
-        int avgValue = 0;
+        int minValue = 100;
+        int sumValue = 0;
         for (int i = 0; i < arr.length; i++) {
-            if(maxValue < arr[i]){
+            if (maxValue < arr[i]) {
                 maxValue = arr[i];
             }
-            avgValue += arr[i];
+            if (minValue > arr[i]) {
+                minValue = arr[i];
+            }
+            sumValue += arr[i];
         }
-        avgValue = avgValue / arr.length;
-        System.out.println("최대치는: "+maxValue);
-        System.out.println("평균치는: "+avgValue);
+        double avgValue;
+        avgValue = sumValue / arr.length;
+        System.out.println("최대치는: " + maxValue);
+        System.out.println("최소치는: " + minValue);
+        System.out.println("평균치는: " + avgValue);
+        System.out.println("총합은: " + sumValue);*/
+        int[] array1, array2;
+        array1 = new int[]{2, 3, 5, 7, 11, 13, 17, 19};
+        for (int i = 0; i < array1.length; i++) {
+            System.out.print(array1[i] + "\t");
+        }
+        array2 = array1;
+        for (int i = 0; i < array2.length; i++) {
+            if (i % 2 == 0) {
+                array2[i] = i;
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < array1.length; i++) {
+            System.out.print(array1[i] + "\t");
+        }
+        System.out.println();
+
+        String[] arr = {"JJ", "DD", "MM", "BB", "GG", "AA"};
+/*        for (int i = 0; i < arr.length / 2; i++) {
+            String temp = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = temp;
+        }*/
+        for (int i = 0,j=arr.length-1; i <j ; i++,j--) {
+            String temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
     }
 }
