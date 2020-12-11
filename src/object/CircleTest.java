@@ -7,16 +7,17 @@ package object;
  */
 public class CircleTest {
     public static void main(String[] args) {
-        Circle c1 = new Circle();
-        c1.radius = 3.6;
-        double area = c1.findArea();
+        Circle cl = new Circle();
+        cl.radius = 3.8;
+        double area = cl.findArea();
         System.out.println(area);
     }
 }
 class Circle{
     double radius;
     public double findArea(){
-        double area = 3.14 * radius * radius;
+        double area = Math.PI * radius * radius;
+        System.out.println(Math.PI);
         return area;
     }
 }
