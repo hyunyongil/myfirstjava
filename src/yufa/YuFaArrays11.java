@@ -1,5 +1,7 @@
 package yufa;
 
+import java.util.Arrays;
+
 /**
  * @author yong
  * @date 2020-12-10 오전 8:42
@@ -70,9 +72,23 @@ public class YuFaArrays11 {
                 break;
             }
         }
-        if(isFlag){
+        if (isFlag) {
             System.out.println("없습니다");
         }
+        System.out.println();
+        int[] arr1 = new int[]{1, 2, 3, 4};
+        int[] arr2 = new int[]{1, 3, 2, 4};
+        //Arrays.equals(arr1,arr2)
+        //Arrays.toString(arr1)
+        Arrays.fill(arr1, 10);
+        System.out.println(arr1);
 
+        int[] arr21 = new int[]{2, 3, 5, 7, 11, 13, 17, 19};
+        int index = Arrays.binarySearch(arr21, 17);
+        if (index > 0) {
+            System.out.println(index);
+        } else {
+            System.out.println("없음");
+        }
     }
 }
