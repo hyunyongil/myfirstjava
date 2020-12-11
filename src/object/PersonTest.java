@@ -26,9 +26,11 @@ public class PersonTest {
         p1.age = 18;
         p1.study();
         p1.showAge();
-        p1.addAge(2);
-        System.out.print(p1.name+" 신규 나이는 :");
-        p1.showAge();
+        int newAge = p1.addAge(3);
+        System.out.println(p1.name+" 신규 나이는 :" + newAge);
+
+        Persons p2 = new Persons();
+        p2.showAge();
     }
 }
 
