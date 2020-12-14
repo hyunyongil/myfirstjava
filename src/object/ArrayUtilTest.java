@@ -13,6 +13,7 @@ public class ArrayUtilTest {
         System.out.println(util.getMin(arr));
         System.out.println(util.getSum(arr));
         System.out.println(util.getAvg(arr));
+        util.reverse(arr);
         util.print(arr);
         util.sort(arr);
         util.print(arr);
