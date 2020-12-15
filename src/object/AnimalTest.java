@@ -8,26 +8,47 @@ package object;
 public class AnimalTest {
     public static void main(String[] args) {
         Animal a = new Animal();
-        a.name ="大黄";
-        a.age =1;
-        a.legs =4;
+        a.name = "大黄";
+        a.setAge(51);
         a.show();
-        a.setLegs(5);
+        a.setLegs(8);
         a.show();
+/*        int le = a.getLegs();
+        System.out.println(le);
+
+        int ag = a.getAge();
+        System.out.println(ag);*/
+
     }
 }
 
 class Animal {
     String name;
-    int age;
-    int legs;//脚的个数
+    private int age;
+    private int legs;//脚的个数
 
-    public void setLegs(int l){
-        if(l >= 0 && l%2 == 0){
+    public void setAge(int a) {
+        if (a > 30 && a < 60) {
+            age = a;
+        } else {
+            age = 0;
+        }
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setLegs(int l) {
+        if (l >= 0 && l % 2 == 0) {
             legs = l;
-        }else{
+        } else {
             legs = 0;
         }
+    }
+
+    public int getLegs() {
+        return legs;
     }
 
     public void eat() {
@@ -35,6 +56,6 @@ class Animal {
     }
 
     public void show() {
-        System.out.println("name="+name+", age="+age+", legs="+legs);
+        System.out.println("name=" + name + ", age=" + age + ", legs=" + legs);
     }
 }
