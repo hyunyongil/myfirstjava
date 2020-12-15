@@ -20,7 +20,11 @@ public class PersonTest {
         int[] arr = new int[]{3,5,8,6,5,2,1,9,5};
         String nuku = p2.sort(arr);
         System.out.println(nuku);*/
-        Persons p1 = new Persons();
+        Person p = new Person("Tom");
+        p.eat();
+        Person1 p1 = new Person1();
+        System.out.println(p1.getAge());
+       /* Persons p1 = new Persons();
         p1.name="Tome";
         p1.sex = 1;
         p1.age = 18;
@@ -35,7 +39,7 @@ public class PersonTest {
         Person1 pe1 = new Person1();
         pe1.setAge(12);
         int aage = pe1.getAge();
-        System.out.println(aage);
+        System.out.println(aage);*/
     }
 }
 
@@ -43,9 +47,14 @@ class Person {
     String name;
     int age = 1;
     boolean isMale;
+    public Person(){
 
+    }
+    public Person(String n){
+        name = n;
+    }
     public void eat() {
-        System.out.println("밥먹고");
+        System.out.println("밥먹고"+name);
     }
 
     public void sleep() {
