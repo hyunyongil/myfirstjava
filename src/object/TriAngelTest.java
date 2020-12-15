@@ -11,5 +11,8 @@ public class TriAngelTest {
         t1.setBase(2.0);
         t1.setHeight(2.4);
         System.out.println(t1.getBase() +", "+ t1.getHeight());
+
+        TriAngle t2 = new TriAngle(2.6,9.3);
+        System.out.println(t2.getBase() +", "+ t2.getHeight());
     }
 }
