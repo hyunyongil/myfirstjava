@@ -41,17 +41,17 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        if (balance < amount) {
+        if (this.balance < amount) {
             System.out.println("잔액부족, 출금실패");
             return;
         }
-        balance -= amount;
+        this.balance -= amount;
         System.out.println("출금성공: " + amount);
     }
 
     public void deposit(double amount) {
         if (amount > 0) {
-            balance += amount;
+            this.balance += amount;
             System.out.println("저축성공: " + amount);
         }
     }
