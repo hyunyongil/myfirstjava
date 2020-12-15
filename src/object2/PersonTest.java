@@ -8,6 +8,18 @@ package object2;
 class Person{
     String name;
     int age;
+    public Person(){
+        System.out.println("40***");
+    }
+    public Person(int age){
+        this();
+        this.age = age;
+    }
+    public Person(String name,int age){
+        this(age);
+        this.name = name;
+        this.age = age;
+    }
     public void setName(String name){
         this.name = name;
     }
@@ -21,18 +33,17 @@ class Person{
         return this.age;
     }
     public void eat(){
-        System.out.println("chifan");
+        System.out.println(this.name+", chifan");
         this.study();
     }
     public void study(){
-        System.out.println("xuexi");
+        System.out.println(this.age+", xuexi");
     }
 }
 
 public class PersonTest {
     public static void main(String[] args) {
-        Person p1 = new Person();
-        p1.setAge(1);
+        Person p1 = new Person("dd",43);
         System.out.println(p1.getAge());
         p1.eat();
     }
