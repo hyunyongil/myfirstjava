@@ -31,6 +31,11 @@ public class PersonTest {
 
         Persons p2 = new Persons();
         p2.showAge();
+
+        Person1 pe1 = new Person1();
+        pe1.setAge(12);
+        int aage = pe1.getAge();
+        System.out.println(aage);
     }
 }
 

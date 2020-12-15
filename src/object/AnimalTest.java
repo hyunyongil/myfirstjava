@@ -28,7 +28,7 @@ class Animal {
     private int legs;//脚的个数
 
     public void setAge(int a) {
-        if (a > 30 && a < 60) {
+        if (a > 0 && a < 120) {
             age = a;
         } else {
             age = 0;
