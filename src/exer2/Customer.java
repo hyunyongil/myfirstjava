@@ -1,0 +1,33 @@
+package exer2;
+
+/**
+ * @author yong
+ * @date 2020-12-16 오전 8:19
+ * @mail yongri1115@163.com
+ */
+public class Customer {
+    private String firstName;
+    private String lastName;
+    private Account account;
+
+    public Customer(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
+    }
+}
