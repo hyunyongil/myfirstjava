@@ -1,5 +1,11 @@
 package exer2;
 
+import object.ArrayUtilTest;
+import object.*;
+
+import java.sql.Date;
+
+
 /**
  * @author yong
  * @date 2020-12-16 오전 8:57
@@ -7,6 +13,10 @@ package exer2;
  */
 public class BankTest {
     public static void main(String[] args) {
+        java.util.Date date = new Date(1955);
+        java.sql.Date date2 = new Date(1987);
+        ArrayUtilTest tes = new ArrayUtilTest();
+        System.out.println(tes);
         Bank bank = new Bank();
         bank.addCustomer("Jane", "Smith");
         bank.getCustomer(0).setAccount(new Account(2000, bank.getCustomer(0)));
