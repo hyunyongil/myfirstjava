@@ -7,7 +7,7 @@ package com.yong.day11;
  */
 public class Person {
     String name;
-    int age;
+    private int age;
 
     public Person() {
     }
@@ -17,11 +17,20 @@ public class Person {
         this.age = age;
     }
 
-    public void eat(){
-        System.out.println("먹다");
+    public int getAge() {
+        return age;
     }
 
-    public void sleep(){
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void eat(){
+        System.out.println("먹다");
+        sleep();
+    }
+
+    private void sleep(){
         System.out.println("자다");
     }
 }
