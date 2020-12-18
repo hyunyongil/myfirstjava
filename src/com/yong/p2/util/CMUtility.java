@@ -68,6 +68,35 @@ public class CMUtility {
         }
     }
 
+    public static int readIntMo() {
+        while(true) {
+            String str = readKeyBoard(20, false);
+
+            try {
+                int n = Integer.parseInt(str);
+                return n;
+            } catch (NumberFormatException var3) {
+                System.out.print("数字输入错误，请重新输入：");
+            }
+        }
+    }
+
+    public static int readIntMo(int defaultValue) {
+        while(true) {
+            String str = readKeyBoard(20, true);
+            if (str.equals("")) {
+                return defaultValue;
+            }
+
+            try {
+                int n = Integer.parseInt(str);
+                return n;
+            } catch (NumberFormatException var4) {
+                System.out.print("数字输入错误，请重新输入：");
+            }
+        }
+    }
+
     public static String readString(int limit) {
         return readKeyBoard(limit, false);
     }

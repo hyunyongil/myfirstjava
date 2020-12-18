@@ -9,16 +9,18 @@ public class Customer {
     private String name;
     private char gender;
     private int age;
+    private int money;
     private String phone;
     private String email;
 
     public Customer() {
     }
 
-    public Customer(String name, char gender, int age, String phone, String email) {
+    public Customer(String name, char gender, int age, int money, String phone, String email) {
         this.name = name;
         this.gender = gender;
         this.age = age;
+        this.money = money;
         this.phone = phone;
         this.email = email;
     }
@@ -37,6 +39,14 @@ public class Customer {
 
     public void setGender(char gender) {
         this.gender = gender;
+    }
+
+    public int getMoney() {
+        return money;
+    }
+
+    public void setMoney(int money) {
+        this.money = money;
     }
 
     public int getAge() {
