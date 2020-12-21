@@ -20,6 +20,11 @@ public class Cylinder extends Circle {
         this.length = length;
     }
 
+    @Override
+    public double findArea() {
+        return super.findArea() + 2 * Math.PI * getRadius() * getLength();
+    }
+
     public double findVolume() {
         return Math.PI * getRadius() * getRadius() * getLength();
     }
