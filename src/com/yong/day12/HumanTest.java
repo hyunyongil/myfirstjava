@@ -19,5 +19,19 @@ public class HumanTest {
         p2.eat();
         p2.walk(1000);
         Person p3 = new Woman();
+        System.out.println("***************************");
+        Man m1 = (Man)p2;
+        m1.earnMoney();
+        m1.isSmoking = true;
+        if(p3 instanceof Woman){
+            System.out.println("12121212");
+        }
+        System.out.println(p3.getClass().getSuperclass());
+        System.out.println("***************************");
+        Person pp1 = new Person("木木",21);
+        Person pp2 = new Person("木木",21);
+        System.out.println(pp1.equals(pp2));
     }
+
+
 }

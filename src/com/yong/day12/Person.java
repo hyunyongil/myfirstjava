@@ -24,5 +24,26 @@ public class Person {
     public void walk(int disance) {
         System.out.println("走路， 走的距离是： " + disance + "公里");
     }
-
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj){
+            return true;
+        }
+        if(obj instanceof Person){
+            Person per = (Person)obj;
+            return this.age == per.age && this.name.equals(per.name);
+        }else{
+            return false;
+        }
+    }
+/*
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age &&
+                id == person.id &&
+                this.name.equals(person.name);
+    }*/
 }
