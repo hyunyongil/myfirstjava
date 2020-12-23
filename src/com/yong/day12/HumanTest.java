@@ -1,5 +1,7 @@
 package com.yong.day12;
 
+import java.util.Date;
+
 /**
  * @author yong
  * @date 2020-12-21 오후 3:43
@@ -31,6 +33,9 @@ public class HumanTest {
         Person pp1 = new Person("木木",21);
         Person pp2 = new Person("木木",21);
         System.out.println(pp1.equals(pp2));
+
+        Date dd = new Date(232332232323L);
+        System.out.println(dd);
     }
 
 
