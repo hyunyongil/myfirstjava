@@ -24,7 +24,18 @@ interface Attackable{
     public abstract void attack();
 }
 
-class Bullet implements Flyable,Attackable{
+interface AA{
+    void method1();
+}
+
+interface BB{
+    void method12();
+}
+
+interface CC extends AA,BB{
+
+}
+class Bullet implements Flyable,Attackable,CC{
 
     @Override
     public void fly() {
@@ -40,7 +51,18 @@ class Bullet implements Flyable,Attackable{
     public void attack() {
 
     }
+
+    @Override
+    public void method1() {
+
+    }
+
+    @Override
+    public void method12() {
+
+    }
 }
+
 class Plane implements Flyable{
 
     @Override
