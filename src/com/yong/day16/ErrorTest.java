@@ -8,6 +8,6 @@ package com.yong.day16;
 public class ErrorTest {
     public static void main(String[] args) {
         String[] dd = new String[1];
-        dd[2] = "2";
+        dd[2] = "3";
     }
 }
